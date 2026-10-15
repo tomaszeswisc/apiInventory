@@ -37,3 +37,12 @@ Consulte o histórico de commits em https://github.com/tomaszeswisc/apiInventory
 - Motivo: permitir reconstruir a configuração sem guardar credenciais reais na documentação.
 - Commit: https://github.com/tomaszeswisc/apiInventory/commit/87f071f04a78ffff269b9542df9489442bc6e58e
 - **Pendente:** trocar credenciais comprometidas e só então remover o `.env` rastreado do Git, com plano de limpeza do histórico.
+
+## 2026-10-15 — remoção concluída de `.env`
+
+- Arquivo removido da árvore atual: `.env` (somente este arquivo).
+- Referência da versão anterior: blob `a10ee92e100c427f6980d6e4422698cf0033b220`.
+- Commit da exclusão: `49e1b69a74d02470025ffbdda1edb5d759bc1576`.
+- Código-fonte não alterado nessa operação; `.env.example` e `.gitignore` permanecem.
+- Para reconstruir a configuração: copiar `.env.example` para `.env` local e inserir credenciais **novas**.
+- Os valores secretos anteriores não devem ser restaurados, e o histórico ainda exige revisão.
