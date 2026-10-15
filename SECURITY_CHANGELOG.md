@@ -46,3 +46,10 @@ Consulte o histórico de commits em https://github.com/tomaszeswisc/apiInventory
 - Código-fonte não alterado nessa operação; `.env.example` e `.gitignore` permanecem.
 - Para reconstruir a configuração: copiar `.env.example` para `.env` local e inserir credenciais **novas**.
 - Os valores secretos anteriores não devem ser restaurados, e o histórico ainda exige revisão.
+
+## 2026-10-15 — conferência de sintaxe automatizada
+
+- Novo arquivo planejado: `.github/workflows/check-syntax.yml`, execução de `node --check server.js` no GitHub Actions.
+- Escopo: verificação estática de sintaxe; não conecta ao banco nem executa login.
+- Remoções: nenhuma. Código-fonte, rotas, segredos e arquivos de configuração não modificados nesta etapa.
+- Recuperação: remover apenas o workflow ou reverter seu commit. O código anterior continua intacto.
